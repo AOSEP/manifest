@@ -9,6 +9,16 @@
 
   <remote  name="val"
            fetch="https://github.com/ValidusOs" />
+  
+  remote  name="aosep"
+           fetch="https://github.com/aosep" />
+  
+  
+  
+  
+  
+  
+  
 
   <default revision="9.0"
            remote="val"
@@ -17,8 +27,8 @@
            sync-j="8" />
 
   <!-- VALIDUS -->
-  <project path="manifest" name="manifest" remote="val" />
-  <project path="build/make" name="build" remote="val" >
+  <project path="manifest" name="manifest" remote="aosep" />
+  <project path="build/make" name="build" remote="aosep" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -27,14 +37,14 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="build_soong" remote="val" >
+  <project path="build/soong" name="build_soong" remote="aosep" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
   <project path="bionic" name="bionic" remote="val" />
-  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="val" />
-  <project path="frameworks/base" name="frameworks_base" remote="val" />
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="aosep" />
+  <project path="frameworks/base" name="frameworks_base" remote="aosep" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="val" />
   <project path="frameworks/opt/jamesdsp" name="frameworks_opt_jamesdsp" remote="val" />
   <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk" remote="val" />
@@ -42,15 +52,15 @@
   <project path="packages/apps/DSPManager" name="packages_apps_DSPManager" remote="val" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="val" />
   <project path="packages/apps/Phonograph" name="packages_apps_Phonograph" remote="val" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="val" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="aosep" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="val" />
   <project path="packages/apps/WolvesDen" name="packages_apps_WolvesDen" remote="val" />
   <project name="packages_services_OmniJaws" path="packages/services/OmniJaws" remote="val" revision="9.0" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="val" />  
   <project path="system/core" name="system_core" groups="pdk" remote="val" />
-  <project path="system/vold" name="system_vold" groups="pdk" remote="val" />
+  <project path="system/vold" name="system_vold" groups="pdk" remote="aosep" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" remote="val" />
-  <project path="vendor/validus" name="vendor_validus" remote="val" />
+  <project path="vendor/aosep" name="vendor_aosep" remote="aosep" />
 
   <project path="external/DUI" name="external_DUI" remote="val" />
   <!--
