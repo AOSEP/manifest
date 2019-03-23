@@ -592,8 +592,8 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
-  <!-- VALIDUS manifest -->
-  <include name="validus_default.xml" />
+  <!-- AOSEP manifest -->
+  <include name="aosep_default.xml" />
 
   <!-- CAF manifest -->
   <include name="caf_default.xml" />
