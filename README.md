@@ -8,6 +8,7 @@ OEM has been abandoned with latest software and security implementation.
 ---------
 * [**Nikhil C R**](https://www.linkedin.com/in/nikhil-c-r-9153b162)
 * [**Neenu P A**](https://www.linkedin.com/in/neenu-p-a-291045b8)
+* [**ANJALI KRISHNAN**](https://www.linkedin.com/in/nikhil-c-r-9153b162)
 
 
 # How to Build?
@@ -17,7 +18,7 @@ To initialize your local repository using the AOSEP trees, use a
 command like this:
 
 ```bash
-  repo init -u git://github.com/ExtendedOS/manifest.git -b pie
+  repo init -u git://github.com/aosep/manifest.git -b 9.0
 ```
   
 # Then to sync up:
