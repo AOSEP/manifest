@@ -10,7 +10,7 @@
   <remote  name="val"
            fetch="https://github.com/ValidusOs" />
   
-  remote  name="aosep"
+  <remote  name="aosep"
            fetch="https://github.com/aosep" />
   
   
